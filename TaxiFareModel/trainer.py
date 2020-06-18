@@ -53,6 +53,7 @@ class Trainer(object):
         self.local = kwargs.get("local", True)  # if True training is done locally
         self.optimize = kwargs.get("optimize", False)  # Optimizes size of Training Data if set to True
         self.mlflow = kwargs.get("mlflow", False)  # if True log info to nlflow
+        self.upload = kwargs.get("upload", False)  # if True log info to nlflow
         self.experiment_name = kwargs.get("experiment_name", self.EXPERIMENT_NAME)  # cf doc above
         self.model_params = None  # for
         self.X_train = X
@@ -240,12 +241,12 @@ if __name__ == "__main__":
     # Get and clean data
     experiment = "taxifare_test_jean"
     params = dict(nrows=1000,
-                  upload=False,
+                  upload=True,
                   local=False,  # set to False to get data from GCP (Storage or BigQuery)
                   gridsearch=False,
                   optimize=False,
                   estimator="xgboost",
-                  mlflow=False,  # set to True to log params to mlflow
+                  mlflow=True,  # set to True to log params to mlflow
                   experiment_name=experiment)
     print("############   Loading Data   ############")
     df = get_data(**params)
