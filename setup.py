@@ -10,7 +10,7 @@ REQUIRED_PACKAGES = [
     'category_encoders',
     'mlflow==1.8.0',
     'joblib==0.14.1',
-    'numpy==1.18.4',
+    'numpy==1.22.0',
     'psutil==5.7.0',
     'pygeohash==1.2.0',
     'termcolor==1.1.0',
