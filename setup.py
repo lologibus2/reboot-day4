@@ -9,7 +9,7 @@ REQUIRED_PACKAGES = [
     'pygeohash',
     'category_encoders',
     'mlflow==1.8.0',
-    'joblib==0.14.1',
+    'joblib==1.2.0',
     'numpy==1.18.4',
     'psutil==5.7.0',
     'pygeohash==1.2.0',
