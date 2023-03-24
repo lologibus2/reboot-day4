@@ -8,7 +8,7 @@ REQUIRED_PACKAGES = [
     'google-cloud-storage==1.26.0',
     'pygeohash',
     'category_encoders',
-    'mlflow==1.8.0',
+    'mlflow==2.2.1',
     'joblib==0.14.1',
     'numpy==1.18.4',
     'psutil==5.7.0',
